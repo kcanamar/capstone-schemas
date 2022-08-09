@@ -25,17 +25,9 @@ export default {
         },
         {
             name: 'goals',
-            type: 'array',
-            title: 'Goals',
-            of: [{
-                type: 'reference',
-                to: [
-                    {type: 'goal'}
-                ],
-            }],
-            options: {
-                layout: 'goals'
-            },
+            type: 'reference',
+            title: 'goals',
+            to: [{type: 'goal'}]
         },
     ],
 }
