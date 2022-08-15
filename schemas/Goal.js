@@ -29,6 +29,22 @@ export default {
             description: 'Are you working on this goal with anyone else?',
             type: 'array',
             of: [{type: 'string'}],
+        },
+        {
+            name: "isCompleted",
+            title: "Is completed?",
+            type: "boolean",
+        },
+        {
+            name: "completedOn",
+            title: "Completed On",
+            type: "datetime",
+        },
+        {
+            name: "map",
+            title: "Map for this goal",
+            type: "reference",
+            to:[{type: "map"}]
         }
     ],
 }

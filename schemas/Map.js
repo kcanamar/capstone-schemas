@@ -23,11 +23,5 @@ export default {
             type: 'string',
             title: 'Users Email',
         },
-        {
-            name: 'goals',
-            type: 'reference',
-            title: 'goals',
-            to: [{type: 'goal'}]
-        },
     ],
 }
